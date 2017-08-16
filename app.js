@@ -16,8 +16,8 @@ if(moment().isLeapYear()){
 };
 
 
-console.log("It is " + currentTime + ".");
-console.log("It is the " + dayOfYear + " day of the year.");
-console.log("It is currently " + secondsOfTheDay + " seconds into the day.");
-console.log("It " + daylightSavingsTime + " currently daylight savings time.");
-console.log("It " + leapYear + " a leap year.");
+console.log("It is " + chalk.blue(currentTime) + ".");
+console.log("It is the " + chalk.magenta(dayOfYear) + " day of the year.");
+console.log("It is currently " + chalk.cyan(secondsOfTheDay) + " seconds into the day.");
+console.log("It " + chalk.yellow(daylightSavingsTime) + " currently daylight savings time.");
+console.log("It " + chalk.red(leapYear) + " a leap year.");
